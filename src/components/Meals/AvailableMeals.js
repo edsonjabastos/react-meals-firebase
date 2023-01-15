@@ -9,7 +9,7 @@ const AvailableMeals = () => {
   const [httpError, setHttpError] = useState();
   useEffect(() => {
     const fetchMeals = async () => {
-      const response = await fetch(process.env.REACT_APP_FIREBASE_CONNECTION);
+      const response = await fetch(process.env.REACT_APP_FIREBASE_MEALS);
       if (!response.ok) {
         throw new Error("Something went wrong!");
       }
